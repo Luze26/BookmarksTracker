@@ -1,6 +1,6 @@
 {
-  "name": "dddd",
-  "version": "1.0",
+  "name": "Bookmarks Tracker",
+  "version": "0.3",
   "background": { "scripts": ["background.js"] },
   "permissions": [
     "tabs", "<all_urls>", "storage", "bookmarks"
