@@ -1,13 +1,13 @@
 {
   "name": "Bookmarks Tracker",
-  "version": "0.5",
+  "version": "0.9",
   "background": { "scripts": ["background.js"] },
   "permissions": [
     "tabs", "<all_urls>", "storage", "bookmarks"
   ],
   "browser_action": {
-    "name": "Msq",
-    "icons": ["icon.png"],
+    "default_title": "Track this site",
+    "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
   "manifest_version": 2,
