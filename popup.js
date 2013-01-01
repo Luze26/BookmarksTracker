@@ -1,6 +1,4 @@
 $(function() {
-	chrome.storage.sync.set({'bookmarks': new Array()});
-	
 	//Add a bookmark
 	$('#url').change(function() {
 		var bookmarkTreeNodes = chrome.bookmarks.getTree(function(bookmarkTreeNodes) {
@@ -20,24 +18,3 @@ $(function() {
 			});
 	});
 });
-
-/*function display() {
-	//Display bookmarks in the popup
-	$('#bookmarks').empty();
-	chrome.storage.sync.get('bookmarks', function(list) {
-		var i;
-		
-		for(i=0; i<list.bookmarks.length; i++) {
-			var anchor = $('<a>');
-			anchor.attr('href', list.bookmarks.url[i]);
-			anchor.text(list.bookmarks.url[i]);
-			
-			anchor.click(function() {
-				chrome.tabs.create({url: $(this).context.href});
-			});
-			
-			$('#bookmarks').append(anchor);
-			$('#bookmarks').append('</br>');
-		}
-	});
-}*/
