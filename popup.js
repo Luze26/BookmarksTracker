@@ -17,7 +17,16 @@ $(function() {
 							//Add information to the storage
 							
 							var callback = function(list) {
-								list.bookmarks[list.bookmarks.length] =  {'url': $('#url').val(), 'id': bookmark.id};
+								var index;
+								if(list.bookmarks != undefined) {
+									index = list.bookmarks.length;
+								}
+								else {
+									index = 0;
+									list.bookmarks = new Array();
+								}
+								
+								list.bookmarks[index] =  {'url': $('#url').val(), 'id': bookmark.id};
 								chrome.storage.sync.set({'bookmarks': list.bookmarks}, window.close());
 							}
 							

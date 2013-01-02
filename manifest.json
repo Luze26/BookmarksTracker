@@ -1,9 +1,11 @@
 {
   "name": "Bookmarks Tracker",
-  "version": "0.9",
+  "version": "1.0",
+  "description": "Updates bookmarks with the last page visited for the base url of the bookmark. Useful to read books, articles, webcomics, ...",
+  "icons": { "128": "icon.png"},
   "background": { "scripts": ["background.js"] },
   "permissions": [
-    "tabs", "<all_urls>", "storage", "bookmarks"
+    "tabs", "storage", "bookmarks"
   ],
   "browser_action": {
     "default_title": "Track this site",
