@@ -1,6 +1,6 @@
 {
   "name": "Bookmarks Tracker",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Updates bookmarks with the last page visited for the base url of the bookmark. Useful to read books, articles, webcomics, ...",
   "icons": { "128": "icon.png"},
   "background": { "scripts": ["background.js"] },
