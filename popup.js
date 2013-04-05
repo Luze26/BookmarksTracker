@@ -27,7 +27,7 @@ $(function() {
 								}
 								
 								list.bookmarks[index] =  {'url': $('#url').val(), 'id': bookmark.id};
-								chrome.storage.sync.set({'bookmarks': list.bookmarks}, window.close());
+								chrome.storage.sync.set({'bookmarks': list.bookmarks}, window.close()); //store the new bookmark
 							}
 							
 							chrome.storage.sync.get('bookmarks', callback);
